@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/backgroundcopy">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/phone_icon"
+                android:id="@+id/image_phone"
+                android:layout_alignBottom="@+id/edit_phone"
+                android:layout_alignLeft="@+id/checkBox"
+                android:layout_alignStart="@+id/checkBox" />
+            <EditText
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/login_exittext_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入您的手机号码"
+                android:id="@+id/edit_phone"
+                android:layout_marginBottom="47dp"
+                android:layout_above="@+id/editcode"
+                android:layout_alignLeft="@+id/textView"
+                android:layout_alignStart="@+id/textView"
+                android:layout_marginTop="182dp" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"
+            android:background="@mipmap/line"
+            android:id="@+id/line_phone"
+            android:layout_below="@+id/image_phone"
+            android:layout_marginTop="22dp"
+            android:layout_alignLeft="@+id/image_phone"
+            android:layout_alignStart="@+id/image_phone"
+            android:layout_alignRight="@+id/edit_phone"
+            android:layout_alignEnd="@+id/edit_phone" />
+
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/verification_code_button"
+        android:id="@+id/image_code"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignTop="@+id/editcode"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_marginTop="6dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/e_mailicon"
+        android:id="@+id/image_mail"
+        android:layout_alignTop="@+id/image_code"
+        android:layout_alignLeft="@+id/line_phone"
+        android:layout_alignStart="@+id/line_phone" />
+
+
+
+            <EditText
+                android:textColorHint="@android:color/white"
+                android:background="@drawable/login_exittext_shape"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入验证"
+                android:id="@+id/editcode"
+                android:layout_marginBottom="75dp"
+                android:layout_above="@+id/checkBox"
+                android:layout_alignLeft="@+id/edit_phone"
+                android:layout_alignStart="@+id/edit_phone" />
+
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkBox"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/btn_login"
+        android:layout_alignStart="@+id/btn_login" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="我已接受登陆服务条款"
+        android:id="@+id/textView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/login_button"
+        android:id="@+id/btn_login"
+        android:layout_marginTop="28dp"
+        android:layout_below="@+id/checkBox"
+        android:layout_centerHorizontal="true" />
+
+
+   <View
+       android:layout_width="wrap_content"
+       android:layout_height="2dp"
+       android:background="@mipmap/line"
+       android:id="@+id/line_mail"
+       android:layout_below="@+id/image_mail"
+       android:layout_marginTop="22dp"
+       android:layout_alignLeft="@+id/image_mail"
+       android:layout_alignStart="@+id/image_mail"
+       android:layout_alignRight="@+id/image_code"
+       android:layout_alignEnd="@+id/image_code" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="隐私条款"
+        android:layout_marginTop="79dp"
+        android:id="@+id/textView2"
+        android:layout_alignTop="@+id/btn_login"
+        android:layout_centerHorizontal="true" />
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2dp"
+        android:id="@+id/line"
+        android:background="@mipmap/line"
+        android:layout_below="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+
+
+</RelativeLayout>

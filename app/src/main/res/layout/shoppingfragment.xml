@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    >
+    <com.saint.carsale.utils.ZListView
+        android:descendantFocusability="beforeDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/xlistview"
+        android:layout_above="@+id/linearLayout" />
+        <LinearLayout
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/linearLayout">
+            <CheckBox
+                android:id="@+id/ck"
+                android:layout_gravity="center_vertical"
+                android:textColor="#66cc99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="全选"/>
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="#66cc99"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="合计:"/>
+            <TextView
+                android:id="@+id/textsettlemen"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="￥1254"/>
+            <Button
+                android:id="@+id/btnsettlemen"
+                android:layout_marginLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="去结算"
+                android:background="#66cc99"/>
+        </LinearLayout>
+
+
+
+</RelativeLayout>
